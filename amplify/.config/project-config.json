@@ -1,0 +1,17 @@
+{
+  "projectName": "nextjsDemo",
+  "version": "0.1.0",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "react",
+    "config": {
+      "SourceDir": "src",
+      "DistributionDir": "out",
+      "BuildCommand": "yarn build",
+      "StartCommand": "yarn start"
+    }
+  },
+  "providers": [
+    "awscloudformation"
+  ]
+}
