@@ -7,8 +7,8 @@ const Post = (props) => {
   return (
     <>
       <p>Post: {id}</p>
-      <br />
-      <p>Latest Modified: {props.latestModified}</p>
+      <p>Latest Modified Timestamp: {props.latestModified}</p>
+      <p>Latest Modified Locale String: {new Date(props.latestModified).toLocaleString()}</p>
     </>
   )
 }
