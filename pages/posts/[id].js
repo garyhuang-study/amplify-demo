@@ -14,7 +14,7 @@ const Post = (props) => {
 }
 
 export default Post
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   return {
     props: {
       latestModified: Date.now()
