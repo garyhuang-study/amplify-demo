@@ -21,3 +21,10 @@ export const getStaticProps = async () => {
     },
   };
 };
+export const getStaticPaths = async () => {
+  const paths = ["1", "2", "3"].map((postId) => ({
+    params: { id: postId },
+  }));
+
+  return {paths, fallback: false};
+};
