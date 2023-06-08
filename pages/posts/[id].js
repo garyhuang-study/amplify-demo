@@ -9,6 +9,7 @@ const Post = (props) => {
       <p>Post: {id}</p>
       <p>Latest Modified Timestamp: {props.latestModified}</p>
       <p>Latest Modified Locale String: {new Date(props.latestModified).toLocaleString()}</p>
+      <p>hello world!!</p>
     </>
   )
 }
