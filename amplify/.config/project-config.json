@@ -1,6 +1,6 @@
 {
-  "projectName": "nextjsDemoSSR",
-  "version": "0.1.0",
+  "projectName": "demoSSR",
+  "version": "3.1",
   "frontend": "javascript",
   "javascript": {
     "framework": "react",
