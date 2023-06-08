@@ -15,9 +15,17 @@ const Post = (props) => {
 
 export default Post
 export const getStaticProps = async () => {
+  const options = {
+    method: 'GET',
+    mode: 'cors',
+    next: { revalidate: 60 },
+  };
+  const res = await fetch('http://worldtimeapi.org/api/timezone/Asia/Taipei', options);
+  const json = await res.json();
+  console.log(json);
   return {
     props: {
-      latestModified: Date.now()
+      latestModified: json?.unixtime ? (json?.unixtime * 1000) : Date.now()
     },
   };
 };
